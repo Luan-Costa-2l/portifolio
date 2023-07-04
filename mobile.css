@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
+    --dark-blue: #141c3a;
+    --extra-light-blue: #ebf5ff;
+    --violet: #6E07F3;
+    --green: #5BE9B9;
+    --white: #fff;
+
+    --green-tech: #64ffda;
+    --light-gray: #a8b2d1;
+
+
     --text-gray: #555;
     --banner-title-lg: 25px;
     --font-sm: 12px;
@@ -26,13 +36,15 @@ body {
 
 .banner__ami {
     font-size: var(--font-sm);
-    color: #555;
+    color: var(--dark-blue);
+    opacity: 0.8;
 }
 
 .banner__title_first,
 .banner__title_last {
     margin: 0;
     line-height: 1;
+    color: var(--dark-blue);
 }
 
 .banner__title_first {
@@ -54,7 +66,8 @@ body {
 }
 
 .banner__icon svg path {
-    fill: var(--text-gray);
+    fill: var(--dark-blue);
+    opacity: 0.8;
 }
 
 .banner__icon .file {
@@ -81,5 +94,6 @@ body {
     max-width: 60%;
     margin-left: auto;
     font-size: calc(var(--font-sm) * 0.8);
-    color: var(--text-gray);
+    color: var(--dark-blue);
+    opacity: 0.8;
 }
