@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root {
+    --text-gray: #555;
+    --banner-title-size: 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.bannerArea {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.banner__ami,
+.banner__description {
+    margin: 0;
+}
+
+.banner__ami {
+    font-weight: bold;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.banner__title_first, 
+.banner__title_last {
+    font-size: var(--banner-title-size);
+    margin: 0;
+}
+
+.banner__title_first {
+    display: inline;
+    line-height: 1;
+}
+
+.banner__icon {
+    display: inline;
+}
+
+.banner__title_last {
+    font-size: calc(var(--banner-title-size) * 1.3);
+    line-height: 1;
+}
+
+.banner__description {
+    color: var(--text-gray);
+    display: block;
+    max-width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 20px;
+}

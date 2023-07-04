@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root {
+    --text-gray: #555;
+    --banner-title-lg: 25px;
+    --font-sm: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.bannerArea {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.banner__ami {
+    font-size: var(--font-sm);
+    color: #555;
+}
+
+.banner__title_first,
+.banner__title_last {
+    margin: 0;
+    line-height: 1;
+}
+
+.banner__title_first {
+    font-size: var(--banner-title-lg);
+    display: inline-block;
+}
+
+.banner__icon {
+    display: inline-block;
+}
+
+.banner__icon a {
+    text-decoration: none;
+    padding: 4px;
+}
+
+.banner__icon svg {
+    height: 20px;
+}
+
+.banner__icon svg path {
+    fill: var(--text-gray);
+}
+
+.banner__icon .file {
+    display: none;
+}
+
+.banner__icon .github:hover path {
+    fill: #000;
+}
+
+.banner__icon .linkedin:hover path {
+    fill: #0A66C2;
+}
+
+.banner__icon .file:hover path {
+    fill: #999;
+}
+
+.banner__title_last {
+    font-size: calc(var(--banner-title-lg) * 1.3);
+}
+
+.banner__description {
+    max-width: 60%;
+    margin-left: auto;
+    font-size: calc(var(--font-sm) * 0.8);
+    color: var(--text-gray);
+}
