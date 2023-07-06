@@ -124,13 +124,19 @@ body {
 
 .projects__item {
     background-color: var(--dark-blue);
-    padding: 15px 15px 30px 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .projects__item img {
     max-width: 100%;
     filter: drop-shadow(0px 0px 5px #33437d);
+}
+
+.projects__item_body {
+    padding: 0 15px;
 }
 
 .projects__item_name {
