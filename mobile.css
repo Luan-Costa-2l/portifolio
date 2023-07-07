@@ -172,3 +172,53 @@ body {
     background-color: var(--green);
     color: var(--dark-blue);
 }
+
+
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__socialItem {
+    transition: all .3s ease;
+    padding: 10px;
+}
+
+.footer__socialItem:hover {
+    transform: translateY(-8px);
+}
+
+.footer__socialItem svg {
+    height: 35px;
+}
+
+.footer__socialItem svg path {
+    fill: var(--violet);
+    transition: all .3s ease;
+}
+
+.footer__socialItem:hover path {
+    fill: var(--green);
+}
+
+.footer__copyright {
+    text-align: center;
+    color: var(--violet);
+}
+
+.footer__copyright a {
+    color: inherit;
+    padding: 10px 0;
+}
+
+.footer__copyright a:hover {
+    color: var(--green);
+}
