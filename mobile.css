@@ -118,8 +118,10 @@ body {
 
 .projects__body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects__item {
@@ -137,6 +139,9 @@ body {
 
 .projects__item_body {
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .projects__item_name {
@@ -148,12 +153,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 14px;
+    line-height: 20px;
 }
 
 .projects__item_linkArea {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: auto;
 }
 
 .projects__item_link {
