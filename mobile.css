@@ -118,10 +118,8 @@ body {
 
 .projects__body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .projects__item {
@@ -130,6 +128,8 @@ body {
     padding-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects__item img {
@@ -169,7 +169,7 @@ body {
     color: var(--white);
     padding: 10px 15px;
     text-transform: uppercase;
-    font-size: var(--font-sm);
+    font-size: 12px;
     border-radius: 10px;
     text-decoration: none;
     border: 1px solid var(--green);
@@ -228,4 +228,86 @@ footer {
 
 .footer__copyright a:hover {
     color: var(--green);
+}
+
+
+
+@media (min-width: 425px) {
+    :root {
+        --banner-title-lg: 35px;
+        --font-sm: 14px;
+    }
+}
+
+@media (min-width: 500px) {
+    :root {
+        --banner-title-lg: 45px;
+        --font-sm: 16px;
+    }
+
+    .banner__icon svg {
+        height: 30px;
+    }
+
+    .banner__icon .file {
+        display: inline-block;
+    }
+
+    .projects__title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .projects__item_linkArea {
+        gap: 20px;
+    }
+
+    .projects__item_link {
+        font-size: 14px;
+        width: min(200px, 50%);
+        text-align: center;
+    }
+}
+
+@media (min-width: 650px) {
+    :root {
+        --banner-title-lg: 60px;
+        --font-sm: 18px;
+    }
+
+    .banner {
+        max-width: 1024px;
+    }
+
+    .banner__icon svg {
+        height: 35px;
+    }
+
+    .projects__title {
+        font-size: 35px;
+        text-shadow: 3px 3px 0 #141c3a;
+    }
+
+    .projects__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .projects__item_desc {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --banner-title-lg: 70px;
+        --font-sm: 20px;
+    }
+
+    .projects__item_name {
+        font-size: 24px;
+    }
 }
