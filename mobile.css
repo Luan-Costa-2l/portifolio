@@ -2,6 +2,7 @@
 
 :root {
     --dark-blue: #141c3a;
+    --dark-blue-opacity: #141c3acc;
     --extra-light-blue: #ebf5ff;
     --violet: #6E07F3;
     --green: #5BE9B9;
@@ -23,6 +24,20 @@
 body {
     margin: 0;
     font-family: 'Archivo Black', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue-opacity);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark-blue);
 }
 
 .bannerArea {
